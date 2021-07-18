@@ -3,12 +3,15 @@ import './HomeScreen.css'
 import NavBar from '../NavBar/NavBar';
 import Banner from'../Banner/Banner';
 import requests from "../../Requests";
+import Row from "../../components/Row/Row";
 
 function HomeScreen() {
     return (
         <div className="homeScreen">
             <NavBar />
+
             <Banner />
+            
             <Row 
                 title='NETFLIX ORIGINALS'
                 fetchUrl={requests.fetchNetflixOriginals}
